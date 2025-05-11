@@ -1,10 +1,9 @@
-
-import React from 'react';
-import Logo from './Logo';
-import AuthButtons from './AuthButtons';
-import { Button } from '@/components/ui/button';
-import Icon from '@/components/ui/icon';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Logo from "./Logo";
+import AuthButtons from "./AuthButtons";
+import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,15 +12,25 @@ const Header = () => {
         <Link to="/" className="flex items-center">
           <Logo size="md" />
         </Link>
-        
+
         <nav className="hidden md:flex items-center space-x-8 mx-4">
-          <NavLink href="/" icon="Home">Главная</NavLink>
-          <NavLink href="/games" icon="Gamepad2">Игры</NavLink>
-          <NavLink href="/bonuses" icon="Gift">Бонусы</NavLink>
-          <NavLink href="/tournaments" icon="Trophy">Турниры</NavLink>
-          <NavLink href="/payments" icon="Wallet">Касса</NavLink>
+          <NavLink href="/" icon="Home">
+            Главная
+          </NavLink>
+          <NavLink href="/games" icon="Gamepad2">
+            Игры
+          </NavLink>
+          <NavLink href="/bonuses" icon="Gift">
+            Бонусы
+          </NavLink>
+          <NavLink href="/tournaments" icon="Trophy">
+            Турниры
+          </NavLink>
+          <NavLink href="/payments" icon="Wallet">
+            Касса
+          </NavLink>
         </nav>
-        
+
         <div className="flex items-center space-x-4">
           <Button variant="ghost" className="relative" aria-label="Уведомления">
             <Icon name="Bell" className="text-gray-300" />
@@ -29,11 +38,11 @@ const Header = () => {
               2
             </span>
           </Button>
-          
+
           <div className="hidden md:block">
             <AuthButtons />
           </div>
-          
+
           <Button variant="ghost" className="md:hidden" aria-label="Меню">
             <Icon name="Menu" />
           </Button>
@@ -51,8 +60,8 @@ interface NavLinkProps {
 
 const NavLink: React.FC<NavLinkProps> = ({ href, icon, children }) => {
   return (
-    <Link 
-      to={href} 
+    <Link
+      to={href}
       className="flex items-center px-2 py-1 font-medium text-gray-300 hover:text-neon-pink transition-colors"
     >
       <Icon name={icon} className="mr-2 h-4 w-4" />
