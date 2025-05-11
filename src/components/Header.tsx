@@ -17,16 +17,16 @@ const Header = () => {
           <NavLink href="/" icon="Home">
             Главная
           </NavLink>
-          <NavLink href="/games" icon="Gamepad2">
+          <NavLink href="/game/sweet-bonanza" icon="Gamepad2">
             Игры
           </NavLink>
-          <NavLink href="/bonuses" icon="Gift">
+          <NavLink href="/game/gates-of-olympus" icon="Gift">
             Бонусы
           </NavLink>
-          <NavLink href="/tournaments" icon="Trophy">
+          <NavLink href="/game/wolf-gold" icon="Trophy">
             Турниры
           </NavLink>
-          <NavLink href="/payments" icon="Wallet">
+          <NavLink href="/game/big-bass-bonanza" icon="Wallet">
             Касса
           </NavLink>
         </nav>
